@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <div className="m-4 flex flex-col sm:flex-row sm:justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-around">
         <div>Justin HB Schwartz</div>
         <nav>
           <ol className="mt-2 flex flex-col sm:mt-0 sm:flex-row sm:space-x-10">
