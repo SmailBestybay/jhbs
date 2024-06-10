@@ -1,18 +1,17 @@
 export default function Expertise() {
   return (
-    <section className="grid gap-2 sm:grid-cols-3">
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-        quaerat?
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-        quaerat?
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-        quaerat?
-      </div>
+    <section className="grid gap-2 bg-blue-500 sm:grid-cols-3">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
+        consequuntur.
+      </p>
+      <p>
+        A, sint neque. Commodi quisquam officia aliquid temporibus voluptatum
+        corrupti!
+      </p>
+      <p>
+        Explicabo optio odit modi quam pariatur officia quis dolore laudantium!
+      </p>
     </section>
   );
 }
