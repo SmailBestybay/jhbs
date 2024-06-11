@@ -2,10 +2,10 @@
 
 export default function WorkSamples() {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2">
-      <div className="bg-slate-100">
+    <section className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+      <div className="bg-sky-400">
         <img
-          className="h-24 w-96 object-cover"
+          className="object-[100%_30%] h-24 w-full object-cover pt-2"
           src="./sample.jpg"
           alt="sample"
         />
@@ -14,9 +14,9 @@ export default function WorkSamples() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, totam!
         </p>
       </div>
-      <div className="">
+      <div className="bg-green-300">
         <img
-          className="h-24 w-96 object-cover"
+          className="h-24 w-full object-cover pt-2"
           src="./sample.jpg"
           alt="sample"
         />
@@ -25,9 +25,9 @@ export default function WorkSamples() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, totam!
         </p>
       </div>
-      <div className="">
+      <div className="bg-purple-500">
         <img
-          className="h-24 w-96 object-cover"
+          className="h-24 w-full object-cover pt-2"
           src="./sample.jpg"
           alt="sample"
         />
@@ -38,7 +38,7 @@ export default function WorkSamples() {
       </div>
       <div className="bg-amber-400">
         <img
-          className="h-24 w-96 object-cover"
+          className="h-24 w-full object-cover pt-2"
           src="./sample.jpg"
           alt="sample"
         />
