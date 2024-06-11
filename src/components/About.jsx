@@ -1,7 +1,7 @@
 import sampleImg from "../assets/sample.jpg";
 export default function About() {
   return (
-    <section className="grid bg-amber-400 sm:grid-cols-2">
+    <section className="grid  sm:grid-cols-2">
       <div className="my-2 flex flex-col gap-2">
         <h1>Hi there, I am Justin</h1>
         <p>Lorem ipsum dolor sit amet.</p>
