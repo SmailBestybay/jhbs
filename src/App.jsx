@@ -3,7 +3,7 @@ import About from "./components/About";
 import Expertise from "./components/Expertise";
 import Achievements from "./components/Achievments";
 import WorkSamples from "./components/WorkSample";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="mx-4 flex max-w-[1200px] flex-col gap-2 sm:mx-auto sm:px-2">
@@ -14,6 +14,7 @@ function App() {
         <Achievements />
         <WorkSamples />
       </main>
+      <Footer />
     </div>
   );
 }
