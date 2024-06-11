@@ -1,6 +1,6 @@
 export default function Achievements() {
   return (
-    <section className="grid gap-6 sm:grid-cols-4">
+    <section aria-label="Achievements" className="grid gap-6 sm:grid-cols-4">
       <div>
         <h2 className="text-center">420</h2>
         <p>

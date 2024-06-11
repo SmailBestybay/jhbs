@@ -1,6 +1,9 @@
 export default function WorkSamples() {
   return (
-    <section className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <section
+      aria-label="Work Samples"
+      className="grid grid-cols-1 gap-2 sm:grid-cols-2"
+    >
       <div className="bg-sky-400">
         <img
           className="h-24 w-full object-cover object-[100%_30%] pt-2"
