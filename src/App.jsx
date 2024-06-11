@@ -8,28 +8,28 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="">
-      <div className="max-w-[1200px] sm:mx-auto sm:px-2">
+      <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
         <Header />
       </div>
       <main>
         <div className="bg-amber-400">
-          <div className="max-w-[1200px] sm:mx-auto sm:px-2">
+          <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
             <About />
           </div>
         </div>
         <div className="bg-blue-500">
-          <div className="max-w-[1200px] sm:mx-auto sm:px-2">
+          <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
             <Expertise />
           </div>
         </div>
-        <div className="max-w-[1200px] sm:mx-auto sm:px-2">
+        <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
           <Achievements />
         </div>
-        <div className="max-w-[1200px] sm:mx-auto sm:px-2">
+        <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
           <WorkSamples />
         </div>
       </main>
-      <div className="max-w-[1200px] sm:mx-auto sm:px-2">
+      <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
         <Footer />
       </div>
     </div>

@@ -3,7 +3,7 @@ export default function Footer() {
     <footer>
       <h2>Have a project in mind?</h2>
       <p>
-        Email me at{" "}
+        Email me at
         <a href="mailto:work@justinhgschwarts.com">work@justinhgschwarts.com</a>
       </p>
     </footer>
