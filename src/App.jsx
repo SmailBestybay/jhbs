@@ -8,32 +8,32 @@ import PropTypes from "prop-types";
 
 function App() {
   return (
-    <div className="">
-      <WidthBGWrapper className="bg-amber-500">
+    <div className="grid min-h-full grid-rows-[auto_1fr_auto]">
+      <Wrapper className="bg-amber-500">
         <Header />
-      </WidthBGWrapper>
+      </Wrapper>
       <main>
-        <WidthBGWrapper className="bg-amber-400">
+        <Wrapper className="bg-amber-400">
           <About />
-        </WidthBGWrapper>
-        <WidthBGWrapper className="bg-blue-500">
+        </Wrapper>
+        <Wrapper className="bg-blue-500">
           <Expertise />
-        </WidthBGWrapper>
-        <WidthBGWrapper>
+        </Wrapper>
+        <Wrapper>
           <Achievements />
-        </WidthBGWrapper>
-        <WidthBGWrapper>
+        </Wrapper>
+        <Wrapper>
           <WorkSamples />
-        </WidthBGWrapper>
+        </Wrapper>
       </main>
-      <WidthBGWrapper>
+      <Wrapper className="bg-red-700">
         <Footer />
-      </WidthBGWrapper>
+      </Wrapper>
     </div>
   );
 }
 
-function WidthBGWrapper(props) {
+function Wrapper(props) {
   return (
     <div className={props.className}>
       <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
@@ -43,7 +43,7 @@ function WidthBGWrapper(props) {
   );
 }
 
-WidthBGWrapper.propTypes = {
+Wrapper.propTypes = {
   className: PropTypes.string,
   children: PropTypes.object.isRequired,
 };
