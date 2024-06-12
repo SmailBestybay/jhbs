@@ -8,8 +8,10 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="">
-      <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
-        <Header />
+      <div className="bg-amber-500">
+        <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
+          <Header />
+        </div>
       </div>
       <main>
         <div className="bg-amber-400">
