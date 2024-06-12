@@ -4,38 +4,47 @@ import Expertise from "./components/Expertise";
 import Achievements from "./components/Achievements";
 import WorkSamples from "./components/WorkSample";
 import Footer from "./components/Footer";
+import PropTypes from "prop-types";
 
 function App() {
   return (
     <div className="">
-      <div className="bg-amber-500">
-        <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
-          <Header />
-        </div>
-      </div>
+      <WidthBGWrapper className="bg-amber-500">
+        <Header />
+      </WidthBGWrapper>
       <main>
-        <div className="bg-amber-400">
-          <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
-            <About />
-          </div>
-        </div>
-        <div className="bg-blue-500">
-          <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
-            <Expertise />
-          </div>
-        </div>
-        <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
+        <WidthBGWrapper className="bg-amber-400">
+          <About />
+        </WidthBGWrapper>
+        <WidthBGWrapper className="bg-blue-500">
+          <Expertise />
+        </WidthBGWrapper>
+        <WidthBGWrapper>
           <Achievements />
-        </div>
-        <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
+        </WidthBGWrapper>
+        <WidthBGWrapper>
           <WorkSamples />
-        </div>
+        </WidthBGWrapper>
       </main>
-      <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
+      <WidthBGWrapper>
         <Footer />
+      </WidthBGWrapper>
+    </div>
+  );
+}
+
+function WidthBGWrapper(props) {
+  return (
+    <div className={props.className}>
+      <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
+        {props.children}
       </div>
     </div>
   );
 }
 
+WidthBGWrapper.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.object.isRequired,
+};
 export default App;
