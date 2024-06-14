@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <header className="flex flex-col p-6 sm:flex-row sm:justify-between">
+      <header className="flex flex-col p-6 md:flex-row md:justify-between">
         <div className="text-4xl italic">
           <span className="relative">
             <span
@@ -12,7 +12,7 @@ export default function Header() {
           </span>
         </div>
         <nav>
-          <ol className="mt-2 flex flex-col sm:mt-0 sm:flex-row sm:space-x-10">
+          <ol className="mt-2 flex flex-col md:mt-0 md:flex-row md:space-x-10">
             <li>About</li>
             <li>Expertise</li>
             <li>Achievements</li>
