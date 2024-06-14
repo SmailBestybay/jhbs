@@ -1,8 +1,16 @@
 export default function Header() {
   return (
     <>
-      <header className="flex flex-col sm:flex-row sm:justify-between">
-        <div>Justin HB Schwartz</div>
+      <header className="flex flex-col p-6 sm:flex-row sm:justify-between">
+        <div className="text-4xl italic">
+          <span className="relative">
+            <span
+              className="absolute -inset-1 block -skew-x-12 skew-y-0 bg-pink-500"
+              aria-hidden="true"
+            ></span>
+            <span className="relative text-white">Justin HB Schwartz</span>
+          </span>
+        </div>
         <nav>
           <ol className="mt-2 flex flex-col sm:mt-0 sm:flex-row sm:space-x-10">
             <li>About</li>
