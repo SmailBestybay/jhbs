@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <header className="flex flex-col p-6 md:flex-row md:justify-between">
+      <header className="flex flex-col py-6 px-2 md:flex-row md:justify-between">
         <div className="text-4xl italic">
           <span className="relative">
             <span
