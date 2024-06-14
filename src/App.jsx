@@ -9,14 +9,14 @@ import PropTypes from "prop-types";
 function App() {
   return (
     <div className="grid min-h-full grid-rows-[auto_1fr_auto]">
-      <Wrapper className="bg-amber-500">
+      <Wrapper className="">
         <Header />
       </Wrapper>
       <main>
-        <Wrapper className="bg-amber-400">
+        <Wrapper className="">
           <About />
         </Wrapper>
-        <Wrapper className="bg-blue-500">
+        <Wrapper className="">
           <Expertise />
         </Wrapper>
         <Wrapper>
@@ -26,7 +26,7 @@ function App() {
           <WorkSamples />
         </Wrapper>
       </main>
-      <Wrapper className="bg-red-700">
+      <Wrapper className="">
         <Footer />
       </Wrapper>
     </div>

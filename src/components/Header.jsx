@@ -5,7 +5,7 @@ export default function Header() {
         <div className="text-4xl italic">
           <span className="relative">
             <span
-              className="absolute -inset-1 block -skew-x-12 skew-y-0 bg-pink-500"
+              className="absolute -inset-1 block -skew-x-12 skew-y-0 bg-[#184E77]"
               aria-hidden="true"
             ></span>
             <span className="relative text-white">Justin HB Schwartz</span>
