@@ -9,14 +9,14 @@ import PropTypes from "prop-types";
 function App() {
   return (
     <div className="grid min-h-full grid-rows-[auto_1fr_auto]">
-      <Wrapper className="">
+      <Wrapper>
         <Header />
       </Wrapper>
       <main className="flex flex-col gap-5">
-        <Wrapper className="">
+        <Wrapper className="bg-orange-400">
           <About />
         </Wrapper>
-        <Wrapper className="">
+        <Wrapper id="expertise-wrapper">
           <Expertise />
         </Wrapper>
         <Wrapper>
@@ -35,7 +35,7 @@ function App() {
 
 function Wrapper(props) {
   return (
-    <div className={props.className}>
+    <div {...props}>
       <div className="mx-4 max-w-[1200px] sm:mx-auto sm:px-2">
         {props.children}
       </div>
@@ -44,7 +44,6 @@ function Wrapper(props) {
 }
 
 Wrapper.propTypes = {
-  className: PropTypes.string,
   children: PropTypes.object.isRequired,
 };
 export default App;
