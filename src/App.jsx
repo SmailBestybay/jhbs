@@ -12,7 +12,7 @@ function App() {
       <Wrapper className="">
         <Header />
       </Wrapper>
-      <main>
+      <main className="flex flex-col gap-5">
         <Wrapper className="">
           <About />
         </Wrapper>
