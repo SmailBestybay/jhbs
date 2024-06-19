@@ -26,7 +26,7 @@ function App() {
           <WorkSamples />
         </Wrapper>
       </main>
-      <Wrapper className="">
+      <Wrapper className="bg-orange-400">
         <Footer />
       </Wrapper>
     </div>
