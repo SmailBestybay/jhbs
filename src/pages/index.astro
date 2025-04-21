@@ -7,25 +7,16 @@ import Wrapper from "../components/Wrapper.astro";
 import WorkSamples from "../components/WorkSamples.astro";
 import Expertise from "../components/Expertise.astro";
 import Achievements from "../components/Achievements.astro";
+
+const wrapped = [About, Skills, Tools, WorkSamples, Expertise, Achievements];
 ---
 
 <Layout>
-  <Wrapper>
-    <About />
-  </Wrapper>
-  <Wrapper>
-    <Skills />
-  </Wrapper>
-  <Wrapper>
-    <Tools />
-  </Wrapper>
-  <Wrapper>
-    <WorkSamples />
-  </Wrapper>
-  <Wrapper>
-    <Expertise />
-  </Wrapper>
-  <Wrapper>
-    <Achievements />
-  </Wrapper>
+  {
+    wrapped.map((WrappedComponent) => (
+      <Wrapper>
+        <WrappedComponent />
+      </Wrapper>
+    ))
+  }
 </Layout>
