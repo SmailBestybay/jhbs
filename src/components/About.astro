@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import portrait from "../assets/hero-portrait.webp";
+---
+
+<section class="grid md:grid-cols-2">
+  <div class="md:flex md:justify-start">
+    <Image
+      class="max-w-full md:max-w-96"
+      src={portrait}
+      alt="Portrait of Justin"
+    />
+  </div>
+  <div class="my-2 flex flex-col gap-2">
+    <h1 class="text-4xl font-semibold">Hi, I&apos;m Justin.</h1>
+    <p class="text-2xl">
+      I craft unforgettable connections between audiences and brands.
+    </p>
+    <p class="text-xl">Ready to elevate your brand?</p>
+    <h2>Contact me</h2>
+    <a href="mailto:justinschw@gmail.com">
+      <p>Email: justinschw@gmail.com</p>
+    </a>
+    <a href="https://www.linkedin.com/in/justinhbschwartz/">
+      <p>Linkedin: justinhbschwartz</p>
+    </a>
+  </div>
+</section>
