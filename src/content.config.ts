@@ -3,8 +3,8 @@ import { glob } from "astro/loaders";
 
 const works = defineCollection({
   loader: glob({ pattern: "**/*", base: "./src/content/works" }),
-  schema: z.object({
-    cover: z.string(),
+  schema: ({image}) => z.object({
+    cover: image(),
     coverAlt: z.string(),
     tags: z.array(z.enum(['all', 'web', 'brand'])).min(1, {
       message: "At least one category tag is required.",
