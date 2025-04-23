@@ -6,7 +6,6 @@ const works = defineCollection({
   schema: z.object({
     cover: z.string(),
     coverAlt: z.string(),
-    // tags: z.string().array(),
     tags: z.array(z.enum(['all', 'web', 'brand'])).min(1, {
       message: "At least one category tag is required.",
     }).max(5, {

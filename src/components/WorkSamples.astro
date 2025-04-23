@@ -1,33 +1,22 @@
 ---
-const workList = [
-  {
-    link: "",
-    src: "./poor-things.webp",
-    alt: "Poor Things",
-    extraImgClass: "object-cover",
-  },
-  { link: "", src: "./hulu.webp", alt: "hulu" },
-  { link: "", src: "./huluween.webp", alt: "huluween" },
-  { link: "", src: "./complete-unknown.webp", alt: "A Complete unknown" },
-  { link: "", src: "./a-real-pain.webp", alt: "A Real Pain" },
-  { link: "", src: "./eeaao.webp", alt: "Everything Everywhere All At Once" },
-  { link: "", src: "./see.webp", alt: "See: The Final Chapter" },
-  { link: "", src: "./house-of-the-dragon.webp", alt: "House of the Dragon" },
-  { link: "", src: "./kardashian.webp", alt: "The Kardashians" },
-];
+import { getCollection } from "astro:content";
+
+const works = await getCollection("works");
 ---
 
 <section>
   <h2 class="text-2xl">My work</h2>
   <div class="flex flex-wrap gap-2">
     {
-      workList.map((work) => (
+      works.map((work) => (
         <div class="">
-          <img
-            class={`h-24 w-full pt-2 ${work.extraImgClass}`}
-            src={work.src}
-            alt={work.alt}
-          />
+          <a href={`${import.meta.env.BASE_URL}/works/${work.id}`}>
+            <img
+              class={`h-24 w-full pt-2`}
+              src={work.data.cover}
+              alt={work.data.coverAlt}
+            />
+          </a>
         </div>
       ))
     }
